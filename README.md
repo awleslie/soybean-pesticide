@@ -1,2 +1,2 @@
 # soybean-pesticide
-A tool to assist in selecting herbicides for soybean crops
+This repository contains the code and data files used to create a Shiny app in R designed to assist in selecting herbicides for soybean production. This app was developed with funding from the Maryland Soybean Board, and is meant to complement the online soybean budget tool. This tool allows users to designate their problematic weed species, which filters herbicide choices for burndown, preplant, and postemergence applications, based on efficacy on selected weed pests. Once herbicides are selected, a report can be generated in PDF format including an estimated price per acre for the application, and associated adjuvants required for optimal efficacy of selected products.
