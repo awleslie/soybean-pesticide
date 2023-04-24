@@ -1,0 +1,57 @@
+---
+output: pdf_document
+params:
+  burn_input: NA
+  pre_input: NA
+  post_input: NA
+  resist: NA
+  broad: NA
+  grass: NA
+  adj_pre: NA
+  adj_burn: NA
+  adj_post: NA
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+# ![](data/logo_red.png)  
+## Soybean Pesticide Selection  
+To report any problems with the tool, contact Alan Leslie: <aleslie@umd.edu>  
+&nbsp;  
+### Main grass weeds: `r params$grass` 
+### Main broadleaf weeds: `r params$broad`  
+&nbsp;  
+&nbsp;  
+Table 1. Pesticides for burndown spray:
+```{r}
+library(knitr)
+kable(params$burn_input,caption=NULL)
+```
+`r params$adj_burn`
+  
+Table 2. Pre-emergence or residual herbicides:
+```{r}
+library(knitr)
+kable(params$pre_input,caption=NULL)
+```
+`r params$adj_pre`
+  
+Table 3. Post-emergence herbicides:  
+```{r}
+kable(params$post_input,caption=NULL)
+```
+`r params$adj_post`
+
+*\*Reference in this publication to any specific commercial product, process, or service, or the use of any trade, firm, or corporation name is for general informational purposes only and does not constitute an endorsement, recommendation, or certification. Persons using such products assume responsibility for their use in accordance with current directions of the manufacturer.*  
+  
+&nbsp;  
+&nbsp;  
+To enter these pesticides into the full soybean enterprise budget, visit <https://awleslie.shinyapps.io/budget_4/>
+  
+  
+\mbox{}
+\vfill    
+<center>
+University programs, activities, and facilities are available to all without regard to race, color, sex, gender identity or expression, sexual orientation, marital status, age, national origin, political affiliation, physical or mental disability, religion, protected veteran status, genetic information, personal appearance, or any other legally protected class.
+</center>
